@@ -43,8 +43,9 @@ moduleData.forEach(data => {
       if (Array.isArray(authorString)) {
         authorString = authorString.join(", ")
       }
+    } else {
+      authorString = `${authorString.name} <${authorString.email}> [${authorString.url}]`
     }
-    authorString = `${authorString.name} <${authorString.email}> [${authorString.url}]`
   }
   if (licenseData[data.license]) {
     licenseData[data.license] += 1;
