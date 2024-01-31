@@ -1,0 +1,36 @@
+{
+  "name": "useful-tools",
+  "version": "1.0.0",
+  "description": "Mika's toolbox",
+  "author": "Mika Drakolis <mika.drakolis@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "run:i-sit-on-you": "node i-sit-on-you.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Drakolis/useful-tools.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Drakolis/useful-tools/issues"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.3",
+    "xo": "^0.56.0"
+  },
+  "xo": {
+    "prettier": true,
+    "rules": {
+      "import/extensions": 0,
+      "n/file-extension-in-import": 0,
+      "new-cap": 0,
+      "unicorn/prefer-module": 0,
+      "no-unused-vars": 2,
+      "import/no-default-export": 2
+    }
+  },
+  "dependencies": {
+    "ps-node": "^0.1.6"
+  }
+}
