@@ -8,8 +8,8 @@ const token = process.argv[2]; // 0 - node, 1 - script name
 console.log(token, 'Token');
 
 if (!token) {
-	console.error('No token was given!');
-	process.exit();
+  console.error('No token was given!');
+  process.exit();
 }
 
 const encodedToken = Buffer.from(token.trim()).toString('base64');
